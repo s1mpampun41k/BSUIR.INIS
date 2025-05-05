@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirt catalog</title>
+    <script src="script.js" defer></script>
+    <script src="shirts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Our T-shirts</h1>
+    <div id="shirtsContainer"></div>
+
+    <template id="shirtCardTemplate">
+        <div class="shirt-card">
+            <div class="shirt-image">
+                <img src="" alt="" onerror="this.onerror=null; this.src='shirt_images/default-m-front.png'">
+            </div>
+            <h2 class="shirt-name"></h2>
+            <p class="shirt-colors"></p>
+            <button class="quick-view">Quick View</button>
+            <button class="see-page">See Page</button>
+        </div>
+    </template>
+</body>
+</html>
